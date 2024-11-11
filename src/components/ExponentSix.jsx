@@ -1,8 +1,5 @@
-const ExponentSix = () => (
-  <div className="exponent-counter-container">
-    <p className="exponent-label">n⁶</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 * 2 * 2 = <span className="total">64</span></p>
-  </div>
-);
+import React from "react";
 
-export default ExponentSix;
+export default function ExponentSix({ count }) {
+  return <p>Exponent of 6: {Math.pow(count, 6)}</p>;
+}
